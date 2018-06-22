@@ -17,7 +17,8 @@ describe('Footer', () => {
                .should('contain', '3 todos left')
        });
 
-       it.only('Handles Filter links', () => {
+       it('Handles Filter links', () => {
+           //debugger;
            const filters = [
                {link: 'Active', expectedLength: 3},
                {link: 'Completed', expectedLength: 1},
